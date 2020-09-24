@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'tasks.dart';
 import 'user.dart';
 
@@ -16,13 +17,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme:ThemeData(fontFamily: 'Product-Sans'),
-      // theme: ThemeData(
-      //   textTheme: GoogleFonts.montserratTextTheme(
-      //     Theme.of(context).textTheme,
-      //   ),
-      //   visualDensity: VisualDensity.adaptivePlatformDensity,
-      // ),
+     /// theme:ThemeData(fontFamily: 'Product-Sans'),
+      theme: ThemeData(
+        textTheme: GoogleFonts.montserratTextTheme(
+          Theme.of(context).textTheme,
+        ),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     );
